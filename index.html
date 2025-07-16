@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Toggle Switch -->
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+    <span class="mode-label">Dark Mode</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="dot"></span>
+      Deepak Nishad
+    </div>
+    <div class="nav-items">
+      <a href="Deepak nishad.pdf" target="-_blank">Resume</a>
+      <a href="#">Research</a>
+      <a href="#projects">Projects
+      </a>
+
+      <a href="personal.html" target="_blank">Personal</a>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="main-section">
+    <div class="left" data-aos="fade-right">
+      <img src="me.jpg" alt="Profile" />
+    </div>
+    <div class="right" data-aos="fade-left">
+      <h1>Deepak Nishad</h1>
+      <h3>A Bit About Me</h3>
+      <p>
+        I’m currently pursuing my Bachelor of Computer Applications (BCA) from a college affiliated with Guru Nanak Dev
+        University (GNDU), Amritsar. I'm in my 4th semester and passionate about web development. With a strong
+        foundation in HTML and CSS, I am currently expanding my skills in JavaScript and modern front-end technologies.
+
+        My aim is to become a skilled and successful web developer, capable of building meaningful digital experiences.
+        I believe in hard work, continuous learning, and turning challenges into opportunities for growth.
+      </p>
+
+      <div class="buttons">
+        <!-- <a href="Deepak nishad.pdf" class="btn resume" download><i
+            class="fas fa-file-download"></i><span>Resume</span></a> -->
+
+        <div class="resume-dropdown">
+          <label for="resume-toggle" class="btn resume">
+            <i class="fas fa-file-download"></i> <span>Resume</span>
+          </label>
+          <input type="checkbox" id="resume-toggle" hidden />
+
+          <div class="resume-options">
+            <a href="Deepak nishad.pdf" download>📄 Download Resume</a>
+            <a href="Deepak nishad.pdf" target="_blank">👁️ View Online</a>
+          </div>
+        </div>
+
+
+        <a href="#research" class="btn research"><i class="fas fa-flask"></i><span>Research</span></a>
+        <a href="#projects" class="btn Projects">Projects
+        </a>
+        <a href="personal.html" class="btn personal"><i class="fas fa-user"></i><span>Personal</span></a>
+      </div>
+    </div>
+
+  </main>
+
+  <section id="research" class="research-section" data-aos="fade-up">
+    <h2>My Research & Experiments</h2>
+    <p>I’m always exploring and learning new tools to improve my web development skills. Here are a few things I’ve
+      worked on recently:</p>
+
+    <div class="research-card">
+      <h3>Responsive Portfolio Website</h3>
+      <p>Built this very portfolio using HTML, CSS, and JavaScript. Features include dark mode, animations, and download
+        buttons.</p>
+    </div>
+
+    <div class="research-card">
+      <h3>JS Form Validation</h3>
+      <p>Created a form with live validation using JavaScript to enhance user experience.</p>
+    </div>
+
+    <ul>
+      <li>Currently learning: React.js and basic backend (Node.js)</li>
+      <li>Comfortable with: HTML, CSS, JS</li>
+      <li>Tools: VS Code, GitHub, Chrome DevTools</li>
+    </ul>
+  </section>
+  <hr>
+  <section id="projects" class="projects-section" data-aos="fade-up">
+    <div class="research-card">
+      <h2>Projects</h2>
+      <p>projects will be added soon!</p>
+    </div>
+    </h3>
+  </section>
+
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Toggle Theme
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+
+</html>
